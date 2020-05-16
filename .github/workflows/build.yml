@@ -12,3 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/build-action
+      - uses: actions/upload-artifact@v2
+        with:
+          name: plugin
+          path: auth_plugin_pyauth.so
